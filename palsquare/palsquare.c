@@ -52,6 +52,7 @@ int main() {
     char *result = to_base(n*n, base);
     if (is_palindrome(result))
       fprintf(fout, "%s %s\n", to_base(n, base), result);
+    else printf("%d\t%s\n", n, result);
     free(result - (32 - strlen(result)));
   }
   fclose(fin);
